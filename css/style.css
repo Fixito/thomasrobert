@@ -313,6 +313,27 @@ header {
   opacity: 0.25;
 }
 
+.service ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill {
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+  padding: 0 1em;
+  margin: 5px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+}
+
+.skill:hover {
+  opacity: 0.6;
+}
+
 .services {
   margin-bottom: 4em;
 }
