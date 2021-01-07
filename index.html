@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevThomas Portfolio Website</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" arial-label="toggle-navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Thomas ROBERT</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <img
+        src="img/dev-thomas-01.jpeg"
+        alt="a picture of Thomas ROBERT smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <!-- Service -->
+        <div class="service">
+          <h3>Design + Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+            debitis similique veritatis consequatur quod reprehenderit iure in
+            nobis id cumque?
+          </p>
+        </div>
+        <!-- End of service -->
+        <!-- Service -->
+        <div class="service">
+          <h3>E-commerce</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+            exercitationem placeat at eveniet facilis, ex quod enim fugit ipsum
+            quisquam.
+          </p>
+        </div>
+        <!-- End of service --><!-- Service -->
+        <div class="service">
+          <h3>Wordpress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt
+            laudantium amet facilis velit perferendis dignissimos in libero
+            maiores nobis!
+          </p>
+        </div>
+        <!-- End of service -->
+      </div>
+      <!-- Enf of my services -->
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer based out of Valenciennes
+      </p>
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam
+          officia reprehenderit sed cumque dolorum, alias facilis cupiditate
+          illo quod.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          quasi fuga minima delectus dolor assumenda adipisci dolores ea nemo
+          error?
+        </p>
+      </div>
+
+      <img
+        src="img/dev-jane-02.jpg"
+        alt="Jane learning against a bus"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://github.com/Fixito/interior-consultant"
+          class="portfolio__item"
+        >
+          <img src="img/portfolio-01.PNG" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://github.com/Fixito/register-form"
+          class="portfolio__item"
+        >
+          <img src="img/portfolio-02.PNG" alt="" class="portfolio__img" />
+        </a>
+        <!-- Portfolio item 03 -->
+        <a href="https://github.com/Fixito/color-game" class="portfolio__item">
+          <img src="img/portfolio-03.PNG" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:thomas_3004@hotmail.fr" class="footer__link"
+        >thomas_3004@hotmail.fr</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/thomasrobert1/"
+            class="social-list__link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/Fixito" class="social-list__link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
