@@ -384,6 +384,12 @@ header {
   }
 }
 
+@media (max-width: 800px) {
+  .about-me img {
+    display: none;
+  }
+}
+
 /** My work section */
 .my-work {
   background-color: var(--clr-dark);
