@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevTR Portfolio Website</title>
+    <meta name="description" content="Je suis Thomas ROBERT, un développeur web. Découvrez quelques uns de mes projets à travers ce portfolio." />
+    <title>Portfolio de Thomas ROBERT</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Normalize -->
     <link
       rel="stylesheet"
@@ -17,33 +36,34 @@
       crossorigin="anonymous"
     />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"/> 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" media="screen"/>
     <!-- JS -->
-    <script src="js/script.js" defer></script>
+    <script rel="preload" as="script" src="js/script.js" defer></script>
   </head>
   <body>
     <header>
-      <button class="nav-toggle" arial-label="toggle-navigation">
+      <button class="nav-toggle" aria-label="Active le menu de navigation">
         <span class="hamburger"></span>
       </button>
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Accueil</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
+            <a href="#services" class="nav__link">Mes Services</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
+            <a href="#about" class="nav__link">À Propos</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
+            <a href="#work" class="nav__link">Mes Projets</a>
           </li>
         </ul>
       </nav>
@@ -52,80 +72,106 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Thomas ROBERT</strong>
+        Bonjour, je suis <strong>Thomas ROBERT</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <p class="section__subtitle section__subtitle--intro">Développeur web</p>
       <img
-        src="img/dev-thomas-01.jpeg"
-        alt="a picture of Thomas ROBERT smiling"
+        rel="preload" 
+        as="image"
+        src="img/dev-thomas-01.jpg"
+        alt="Une photo de Thomas ROBERT"
         class="intro__img"
+        width="1000" 
+        height="1000"
       />
     </section>
 
     <!-- My services-->
     <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">Technical Skills</h2>
+      <h2 class="section__title section__title--services">Ce que je fais</h2>
       <div class="services">
         <!-- Service -->
         <div class="service">
-          <ul>
-            <li class="skill">HTML</li>
-            <li class="skill">CSS</li>
-            <li class="skill">JavaScript</li>
-            <li class="skill">Bootstrap</li>
-            <li class="skill">PHP</li>
-            <li class="skill">GitHub</li>
-            <li class="skill">MySQL</li>
-            <li class="skill">Symfony</li>
-          </ul>
+          <h3>Développer des sites</h3>
+          <p>Le processus de développement web implique de prendre les éléments graphiques définis dans le design et de les coder en un site web.</p>
+        </div>
+        <!-- End of service -->
+        <!-- Service -->
+        <div class="service">
+          <h3>Responsive Web Design</h3>
+          <p>Avoir un design responsive signifie que votre site se redimensionne de façon fluide et optimale 
+            peu importe les appareils (ex : ordinateur, tablette, smartphone).</p>
+        </div>
+        <!-- End of service -->
+        <!-- Service -->
+        <div class="service">
+          <h3>Langages</h3>
+          <p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>PHP</li>
+              <li>SQL</li>
+            </ul>
+          </p> 
         </div>
         <!-- End of service -->
       </div>
       <!-- Enf of my services -->
-      <a href="#work" class="btn">My Work</a>
+      <a href="#work" class="btn">Mes Projets</a>
     </section>
 
     <!-- About me -->
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
+      <h2 class="section__title section__title--about">Qui je suis</h2>
       <p class="section__subtitle section__subtitle--about">
-        Developer based out of Valenciennes
+        Un développeur situé à Valenciennes
       </p>
       <div class="about-me__body">
         <p>
-          I'm studying to become a full-stack developper since August 2020 and
-          looking for an internship.
+          Depuis que j'ai commencé mon parcours de développeur web en 2020, 
+          je cherche à collaborer avec des entreprises et des personnes talentueuses 
+          pour créer des produits numériques destinés à la fois aux entreprises et aux consommateurs.
+          Je suis naturellement curieux et je travaille constamment à améliorer mes compétences.
         </p>
       </div>
 
-      <img src="img/dev-02.jpeg" alt="" class="about-me__img" />
+      <img rel="preload" as="image" src="img/blank.png" alt="" class="about-me__img" width="1000" height="1000"/>
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
+      <h2 class="section__title">Mes projets</h2>
       <p class="section__subtitle section__subtitle--work">
-        A selection of my range of work
+        Une sélection de mes projets
       </p>
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
         <a
           href="https://github.com/Fixito/interior-consultant"
-          class="portfolio__item"
-        >
-          <img src="img/portfolio-01.PNG" alt="" class="portfolio__img" />
+          class="portfolio__item">
+          <img rel="preload" as="image" src="img/portfolio-01.jpg" alt="Projet Design Homepage" class="portfolio__img" width="1000" height="1000"/>
         </a>
         <!-- Portfolio item 02 -->
         <a
           href="https://github.com/Fixito/register-form"
           class="portfolio__item"
         >
-          <img src="img/portfolio-02.PNG" alt="" class="portfolio__img" />
+          <img rel="preload" as="image" src="img/portfolio-02.jpg" alt="Projet Design Formulaire" class="portfolio__img" width="1000" height="1000"/>
         </a>
         <!-- Portfolio item 03 -->
         <a href="https://github.com/Fixito/color-game" class="portfolio__item">
-          <img src="img/portfolio-03.PNG" alt="" class="portfolio__img" />
+          <img rel="preload" as="image" src="img/portfolio-03.jpg" alt="Projet Jeu Color-Game" class="portfolio__img" width="1000" height="1000"/>
+        </a>
+        <!-- Portfolio item 04 -->
+        <a href="https://gitlab.com/Fixito/thomasrobert" class="portfolio__item">
+          <img rel="preload" as="image" src="img/portfolio-04.jpg" alt="Projet Blog Symfony" class="portfolio__img" width="1000" height="1000">
+        </a>
+        <!-- Portfolio item 04 -->
+        <a href="https://github.com/Fixito/api-weather" class="portfolio__item">
+          <img rel="preload" as="image" src="img/portfolio-05.jpg" alt="Projet API Météo" class="portfolio__img" width="1000" height="1000">
         </a>
       </div>
     </section>
@@ -140,12 +186,17 @@
           <a
             href="https://www.linkedin.com/in/thomasrobert1/"
             class="social-list__link"
-            ><i class="fab fa-linkedin-in"></i
+            ><i class="fab fa-linkedin-in" aria-label="Lien vers le profil Linkedin de Thomas ROBERT"></i
           ></a>
         </li>
         <li class="social-list__item">
           <a href="https://github.com/Fixito" class="social-list__link"
-            ><i class="fab fa-github"></i
+            ><i class="fab fa-github" aria-label="Lien vers le profil Github de Thomas ROBERT"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://gitlab.com/Fixito" class="social-list__link"
+            ><i class="fab fa-gitlab" aria-label="Lien vers le profil Gitlab de Thomas ROBERT"></i
           ></a>
         </li>
         <li class="social-list__item">
